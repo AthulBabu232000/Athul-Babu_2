@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    position:relative;
+
+}
+
+html, body{
+    scroll-behavior:smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid{
+    margin:0;
+    padding:0;
+}
+
+#home, #about, #services, #clients, #contact ,#news{
+    position:relative;
+    height:100vh;
+}
+
+.custom-shape-divider-bottom-1620837314 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-image:linear-gradient(to left, #0712e0 , #01c8f9);
+}
+
+.custom-shape-divider-bottom-1620837314 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 40px;
+  
+    background-image:transparent;
+}
+
+.custom-shape-divider-bottom-1620837314 .shape-fill {
+    fill: #FFF;
+}
+
+#hrow{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    color:#fff;
+    width:100%;
+}
+#abt-us-btn{
+    border-radius:10% 10% 10% 10% / 50% 50% 50% 50% ;
+}
+
+#himg-main{
+    
+}
