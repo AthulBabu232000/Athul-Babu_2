@@ -18,22 +18,22 @@
 
         <nav class="navbar navbar-expand-sm navbar-dark shadow p-3 mb-5 bg-white rounded"
             style="background-image:linear-gradient(to right, #0712e0 , #01c8f9);position:fixed;z-index:100;width:100%;">
-            <a class="navbar-brand pl-sm-5" href="#"><img src="./assets/Logo-W.png"
-                    class='img-fluid img-responsive w-25 ml-sm-5' alt="logo" srcset=""></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+            <a class="navbar-brand col-lg-5 pl-lg-5" href="#"><img src="./assets/Logo-W.png"
+                    class='img-fluid img-responsive w-25 ml-lg-4' alt="logo" srcset=""></a>
+            <button class="navbar-toggler d-lg-none mr-0" style = 'margin-right:10px;' type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                aria-label="Toggle navigation"><i class="fa fa-bars " aria-hidden="true"></i></button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <ul class="navbar-nav  mr-auto mt-2 mt-lg-0" >
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a onclick = 'switcher(this)'class="nav-link" href="#home">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a onclick="switcher(this)" class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        <a onclick="switcher(this)" class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Services</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
@@ -41,7 +41,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Clients</a>
+                        <a onclick="switcher(this)" class="nav-link" href="#">Clients</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">News</a>
@@ -50,16 +50,16 @@
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">|<i class="fa fa-phone" aria-hidden="true">209-332-5409</i></a>
+                        <a href="#" class="nav-link">| <i class="fa fa-phone" aria-hidden="true"> 209-332-5409</i></a>
                     </li>
                 </ul>
 
             </div>
         </nav>
 
-        <section id="home" style='overflow:hidden'>
+        <section id="home" >
 
-            <div class="custom-shape-divider-bottom-1620837314" style='height:100%;z-index: -1;'>
+            <div class="custom-shape-divider-bottom-home" style='height:90vh;z-index: -1;'>
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
@@ -93,15 +93,16 @@
         </section>
 
 
-        <section id='about'>
+        <section id='about' class = 'pt-lg-5'>
 
             <div class="row mx-auto mt-5">
                 <div class="col-lg-5 mx-auto">
                     <img src="./assets/Intro-Home-page-new.png" id='aimg-main' alt="about img"
                         class='mx-auto mt-lg-5 img-fluid img-responsive w-75' srcset="">
                 </div>
-                <div class="col-lg-5 mx-auto">
-                    <h3 style='text-transform:capitalize;color:#0712e0;' class='mt-lg-5'>we create unique <br> campaigns
+                <div class="col-lg-5 mx-auto my-auto">
+                    <p style = 'color:#ccc' class = text-capitalize>the sky's the limit</p>
+                    <h3 style='text-transform:capitalize;color:#0712e0;' >we create unique <br> campaigns
                         that help <br> your business grow</h3>
                     <p class='mx-auto mb-3 ' style='color:#ccc;font-size:small;'>Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Ducimus, veritatis <br> quas unde, molestias, distinctio rerum repudiandae
@@ -118,7 +119,7 @@
         </section>
 
 
-        <section id="services">
+        <section id="services" class = 'pt-lg-5 mt-lg-5'>
             <div class="row mx-auto">
                 <div class="col-lg-10 mx-auto">
                     <div class="row mx-auto">
@@ -140,14 +141,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row mx-auto mt-lg-5">
+            <div class="row mx-auto mt-lg-5 pt-lg-3">
                 <div class="col-lg-10 mx-auto">
                     <div class="row mx-auto">
                         <div class="col-lg-4">
-                            <div class="card pt-1 shadow p-3 mb-5 bg-white rounded">
-                                <img src="./assets/Group-11-Copy.png" class='img-responsive img-fluid w-25 rounded '
+                            <div class="card pt-1 shadow p-3 mb-5 bg-white">
+                                <img src="./assets/Group-11-Copy.png" class='img-responsive img-fluid w-25 '
                                     alt="social media">
-                                <div class="card-body">
+                                <div class="card-body" >
                                     <h4 class="card-title text-capitalize">social media</h4>
                                     <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
                                     <a href="" class='text-capitalize'
@@ -157,8 +158,8 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="card pt-1 shadow p-3 mb-5 bg-white rounded">
-                                <img src="./assets/Group-13-Copy.png" class='img-responsive img-fluid w-25 rounded '
+                            <div class="card pt-1 shadow p-3 mb-5 bg-white">
+                                <img src="./assets/Group-13-Copy.png" class='img-responsive img-fluid w-25 '
                                     alt="social media">
                                 <div class="card-body">
                                     <h4 class="card-title text-capitalize">SEO</h4>
@@ -172,8 +173,8 @@
                         <div class="col-lg-4">
 
 
-                            <div class="card pt-1 shadow p-3 mb-5 bg-white rounded">
-                                <img src="./assets/Group-17.png" class='img-responsive img-fluid w-25 rounded '
+                            <div class="card pt-1 shadow p-3 mb-5 bg-white">
+                                <img src="./assets/Group-17.png" class='img-responsive img-fluid w-25 '
                                     alt="social media">
                                 <div class="card-body">
                                     <h4 class="card-title text-capitalize">PPC</h4>
@@ -191,8 +192,8 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="row mx-auto">
                         <div class="col-lg-4">
-                            <div class="card pt-1 shadow p-3 mb-5 bg-white rounded">
-                                <img src="./assets/Group-21.png" class='img-responsive img-fluid w-25 rounded '
+                            <div class="card pt-1 shadow p-3 mb-5 bg-white">
+                                <img src="./assets/Group-21.png" class='img-responsive img-fluid w-25 '
                                     alt="social media">
                                 <div class="card-body">
                                     <h4 class="card-title text-capitalize">Strategy</h4>
@@ -204,8 +205,8 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="card pt-1 shadow p-3 mb-5 bg-white rounded">
-                                <img src="./assets/Group-20.png" class='img-responsive img-fluid w-25 rounded '
+                            <div class="card pt-1 shadow p-3 mb-5 bg-white">
+                                <img src="./assets/Group-20.png" class='img-responsive img-fluid w-25 '
                                     alt="social media">
                                 <div class="card-body">
                                     <h4 class="card-title text-capitalize">Web Designing</h4>
@@ -219,7 +220,7 @@
                         <div class="col-lg-4">
 
 
-                            <div class="card pt-1 shadow p-3 mb-5 bg-white rounded">
+                            <div class="card pt-1 shadow p-3 mb-5 bg-white">
                                 <img src="./assets/content-icon-new.png" class='img-responsive img-fluid w-25 rounded '
                                     alt="social media">
                                 <div class="card-body">

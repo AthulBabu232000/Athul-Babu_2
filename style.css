@@ -22,7 +22,22 @@ html, body{
     height:100vh;
 }
 
-.custom-shape-divider-bottom-1620837314 {
+ul{
+    margin-left:-20px;
+  
+}
+
+.navbar .nav-item .nav-link{
+    color:#fff;
+    height:100%;
+  
+}
+.navbar .nav-item.active {
+  
+    border-bottom:1px solid #fff;
+}
+
+.custom-shape-divider-bottom-home {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -33,7 +48,7 @@ html, body{
     background-image:linear-gradient(to left, #0712e0 , #01c8f9);
 }
 
-.custom-shape-divider-bottom-1620837314 svg {
+.custom-shape-divider-bottom-home svg {
     position: relative;
     display: block;
     width: calc(135% + 1.3px);
@@ -42,7 +57,7 @@ html, body{
     background-image:transparent;
 }
 
-.custom-shape-divider-bottom-1620837314 .shape-fill {
+.custom-shape-divider-bottom-home .shape-fill {
     fill: #FFF;
 }
 
@@ -55,7 +70,12 @@ html, body{
     width:100%;
 }
 .btn{
-    border-radius:10% 10% 10% 10% / 50% 50% 50% 50% ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 #himg-main{
@@ -64,7 +84,9 @@ html, body{
     margin-top:190px;
     height:450px;
 }
-
+#more-ser-btn{
+    float:right;
+}
 #aimg-main{
     display:block;
     border-top-left-radius: 60px;
@@ -79,7 +101,10 @@ html, body{
 
 }
 
-
+#services .card{
+    border-radius:5px;
+    border-bottom-left-radius: 30px;
+}
 .custom-shape-divider-top-1620912354 {
     position: absolute;
     top: 0;
