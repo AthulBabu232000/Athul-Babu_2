@@ -100,7 +100,18 @@ ul{
     border:none;
 
 }
+#main-img-shapes{
+    position:absolute;
+    display:block;
+    width:100%;    
+    opacity:0.2;
 
+}
+#abt-img-main, #ser-img-main, #team-img-main, #cta-clients{
+    position:absolute;
+    display:block;
+    width:100%;    
+}
 #services .card{
     border-radius:5px;
     border-bottom-left-radius: 30px;
