@@ -17,7 +17,7 @@ html, body{
     padding:0;
 }
 
-#home, #about, #services, #clients, #contact ,#news{
+#home, #contact ,#news{
     position:relative;
     height:100vh;
 }
@@ -54,10 +54,72 @@ html, body{
     color:#fff;
     width:100%;
 }
-#abt-us-btn{
+.btn{
     border-radius:10% 10% 10% 10% / 50% 50% 50% 50% ;
 }
 
 #himg-main{
+    border-radius:87% 52% 17% 17% / 50% 18% 18% 19% ;
+    display:block;
+    margin-top:190px;
+    height:450px;
+}
+
+#aimg-main{
+    display:block;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius:60px;
+    border-bottom-right-radius:160px;
     
+}
+
+.card{
+    border:none;
+
+}
+
+
+.custom-shape-divider-top-1620912354 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-image: linear-gradient(to right, #0712e0 ,#01c8f9);
+    height:80vh;
+}
+
+.custom-shape-divider-top-1620912354 svg {
+    position: relative;
+    display: block;
+    width: calc(171% + 1.3px);
+    height: 62px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1620912354 .shape-fill {
+    fill: #FFFFFF;
+}
+
+#nimg-main{
+    display:block;
+    position:absolute;
+    top:-140px;
+    height:450px;
+    border-radius:80px;
+    border-top-left-radius:200px;
+}
+
+input{
+    width:80%;
+    border:1px solid #ccc;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height:38px;
+    outline:none;
+    padding-left:5px;
 }
