@@ -159,3 +159,35 @@ input{
     outline:none;
     padding-left:5px;
 }
+
+@keyframes animateModal{
+
+    from{
+        transform:scale(0);
+    }
+    to{
+        transform:scale(1);
+
+       
+      
+
+    }
+
+}
+
+
+@keyframes animateModout{
+
+    from{
+        transform:rotate(0) scale(1);
+    }
+    to{
+       
+        /* position:absolute; */
+        background-color:yellow;
+        /* transform:rotate(45deg) translate(0, 200%); */
+     
+
+    }
+
+}

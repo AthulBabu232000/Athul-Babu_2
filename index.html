@@ -483,11 +483,74 @@
             </div>
         </section>
 
-<div style = 'top:0;left:0;width:40px;height:40px;'>
-    <button class = 'btn px-2 pt-2 m-3' style = 'height:40px; width:40px; position:fixed;background-color:#0712e0; border-radius:50%;'><i class="fas fa-envelope" style = 'font-size:larger; color:#fff;'></i></button>
+<div style = 'bottom:20px;left:0;width:40px;height:40px;z-index:10000;position: fixed;'>
+    <button  type="button" onclick = 'modalzoom()' data-toggle="modal" data-target="#modelId" class = 'btn px-2 pt-2 m-3' style = 'height:40px; width:40px; position:fixed;background-color:#0712e0; border-radius:50%;'><i class="fas fa-envelope" style = 'font-size:larger; color:#fff;'></i></button>
 
 </div>
     </div>
+
+
+    <!-- Button trigger modal -->
+   
+    
+    <!-- Modal -->
+    <div class="modal" style = 'overflow:hidden;'id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content p-4 ">
+
+                    <div class="modal-header">
+                      
+                            <h5 class="modal-title text-capitalize">
+                <p class = 'text-capitalize my-auto' style = 'color:#01c8f9;font-size:x-small;'>let's have a chat</p>
+                                
+                                
+                                learn how we helped 100 <br> top brands gain success</h5>
+                                <button type="button" class="close"  onclick = 'modalout()' aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <style>
+                            input{
+                                background-color:#eee;
+                                
+                            }
+                        </style>
+                        <div class="row mx-auto mb-2">
+                            <input type="text" class = 'rounded' placeholder = 'Full Name'>
+                        </div>
+                        <div class="row mx-auto mb-2">
+                            <input type="text" class = 'rounded' placeholder = 'Phone'>
+                        </div>
+                        <div class="row mx-auto mb-2">
+                            <input type="text" class = 'rounded' placeholder = 'Email'>
+                        </div>
+                        <div class="row mx-auto mt-4" >
+
+<div class = 'col-8 mx-auto' style = 'display:flex;justify-content:flex-end'>
+
+    <button type="button" class="btn" style = 'background-color:#01c8f9;color:#fff;'>Save <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    
+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // $('#exampleModal').on('show.bs.modal', event => {
+        //     // var button = $(event.relatedTarget);
+        //     var modal = $(this);
+        //     this.style.animation = 'animateModal 4s forwards';
+        //     // Use above variables to manipulate the DOM
+            
+        // });
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
